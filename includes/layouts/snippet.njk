@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="twitter:title" content="{{ renderData.title or title }}">
+        <meta name="twitter:description" content="{{ renderData.description or description }}">
+        <meta name="twitter:player" content="https://snippets.lukeb.co.uk{{ page.url }}" />
+        <meta name="twitter:player:width" content="480" />
+        <meta name="twitter:player:height" content="480" />
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        {{ content | safe }}
+    </body>
+</html>
